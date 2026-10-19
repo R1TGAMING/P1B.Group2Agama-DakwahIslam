@@ -1,0 +1,461 @@
+/* JADWAL KEGIATAN KEAGAMAAN - styles khusus halaman ini */
+
+/* =========================
+
+   JADWAL KEGIATAN
+
+\========================= */
+
+.schedule-hero {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(150deg, #0b4937, #062c22);
+
+}
+
+.schedule-label {
+
+    color: #dfc15d;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+.schedule-hero h1 {
+
+    color: #dfc15d;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    margin-bottom: 12px;
+
+}
+
+.schedule-hero > p:last-child {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+}
+
+/* Area daftar kegiatan */
+
+.schedule-container {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 35px 20px 60px;
+
+    background: #faf7f0;
+
+}
+
+/* Pengumuman */
+
+.schedule-announcement {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 28px;
+
+    background: white;
+
+    border-left: 4px solid #c5a535;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+
+}
+
+.announcement-icon {
+
+    font-size: 30px;
+
+}
+
+.schedule-announcement h2 {
+
+    color: #084333;
+
+    font-size: 17px;
+
+    margin-bottom: 4px;
+
+}
+
+.schedule-announcement p {
+
+    color: #68716a;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+/* Kumpulan card */
+
+.schedule-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    align-items: stretch;
+
+    gap: 24px;
+
+}
+
+.schedule-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: white;
+
+    padding: 22px;
+
+    border: 1px solid #ece9df;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.schedule-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+.schedule-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 16px;
+
+}
+
+.schedule-category {
+
+    padding: 5px 12px;
+
+    background: #e9f2e9;
+
+    color: #15553c;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+.schedule-status {
+
+    color: #9a7d20;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+.schedule-card h2 {
+
+    color: #084333;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+
+}
+
+.schedule-description {
+
+    color: #68716a;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+/* Tanggal, waktu, pemateri, dan lokasi */
+
+.schedule-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+
+}
+
+.schedule-info-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+}
+
+.info-icon {
+
+    width: 35px;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #f1f4ed;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+}
+
+.schedule-info-item small {
+
+    display: block;
+
+    color: #858b86;
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+
+}
+
+.schedule-info-item p {
+
+    color: #344b3e;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+
+}
+
+/* Countdown */
+
+.countdown-box {
+
+    margin-top: auto;
+
+    margin-bottom: 15px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background: #f2f5ed;
+
+    border: 1px solid #e2e9dc;
+
+    border-radius: 10px;
+
+}
+
+.countdown-box p {
+
+    color: #617064;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+
+}
+
+.event-countdown {
+
+    color: #0b4937;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+
+}
+
+/* Tombol kalender */
+
+.calendar-button {
+
+    width: 100%;
+
+    padding: 12px 16px;
+
+    background: #084333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+
+}
+
+.calendar-button:hover {
+
+    background: #126349;
+
+}
+
+.calendar-note {
+
+    margin-top: 22px;
+
+    color: #737b74;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    text-align: center;
+
+}
+
+.schedule-empty {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #68716a;
+
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+    .schedule-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 16px;
+
+    }
+
+    .schedule-card {
+
+        padding: 18px;
+
+    }
+
+}
+
+/* HP */
+
+@media (max-width: 600px) {
+
+    .schedule-hero h1 {
+
+        font-size: 27px;
+
+    }
+
+    .schedule-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .schedule-announcement {
+
+        align-items: flex-start;
+
+        padding: 16px;
+
+    }
+
+    .schedule-card h2 {
+
+        font-size: 20px;
+
+    }
+
+    .event-countdown {
+
+        font-size: 16px;
+
+    }
+
+}

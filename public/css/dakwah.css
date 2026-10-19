@@ -1,0 +1,534 @@
+/* DAKWAH ISLAM - styles khusus halaman ini */
+
+/* Area judul */
+
+.blog-hero {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(150deg, #0b4937, #062c22);
+
+}
+
+.blog-hero h1 {
+
+    color: #dfc15d;
+
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+}
+
+.blog-hero p {
+
+    margin: 10px 0 22px;
+
+}
+
+.search-form {
+
+    display: flex;
+
+    max-width: 520px;
+
+    margin: auto;
+
+    gap: 8px;
+
+}
+
+.search-form input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+}
+
+.search-form button {
+
+    padding: 10px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d8b438;
+
+    color: #173e32;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+/* Kartu dakwah */
+
+.blog-listing {
+
+    padding: 42px 20px 60px;
+
+    background: #faf7f0;
+
+    min-height: 400px;
+
+}
+
+.blog-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+}
+
+.blog-card {
+
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+
+}
+
+.card-image {
+
+    height: 190px;
+
+    display: block;
+
+    overflow: hidden;
+
+}
+
+.card-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.card-image-placeholder {
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #e2c25d;
+
+    background: linear-gradient(135deg, #10503d, #062b22);
+
+}
+
+.card-image-placeholder span {
+
+    font-size: 42px;
+
+}
+
+.card-content {
+
+    padding: 20px;
+
+}
+
+.card-meta {
+
+    color: #858b86;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+
+}
+
+.card-content h2 {
+
+    color: #104434;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+
+}
+
+.card-content h2 a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+.speaker {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #9b812d;
+
+    margin-bottom: 10px;
+
+}
+
+.card-excerpt {
+
+    font-size: 14px;
+
+    color: #68716a;
+
+    margin-bottom: 15px;
+
+}
+
+.read-more,
+
+.back-link {
+
+    color: #947822;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+/* Detail dakwah */
+
+.article-container {
+
+    max-width: 780px;
+
+    padding: 25px 20px 60px;
+
+    margin: auto;
+
+}
+
+.breadcrumbs {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    color: #858b86;
+
+    font-size: 13px;
+
+}
+
+.breadcrumbs a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+.article-detail h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    line-height: 1.25;
+
+    color: #084333;
+
+    margin-bottom: 20px;
+
+}
+
+.dakwah-info {
+
+    background: #edf3eb;
+
+    border-left: 4px solid #c5a535;
+
+    padding: 18px 20px;
+
+    border-radius: 5px;
+
+    margin-bottom: 28px;
+
+}
+
+.dakwah-info p {
+
+    margin: 5px 0;
+
+    color: #42564b;
+
+}
+
+.youtube-section,
+
+.summary-section {
+
+    margin-bottom: 30px;
+
+}
+
+.youtube-section h2,
+
+.summary-section h2 {
+
+    font-family: Georgia, serif;
+
+    color: #084333;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+}
+
+.youtube-section p,
+
+.summary-section p {
+
+    color: #4f5d54;
+
+    line-height: 1.8;
+
+    margin-bottom: 14px;
+
+}
+
+/* Tampilan video YouTube */
+
+.youtube-player {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #000;
+
+    margin: 20px 0;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+
+}
+
+.youtube-player iframe {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+}
+
+/* Tombol YouTube */
+
+.youtube-button {
+
+    display: inline-block;
+
+    background: #b93b32;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: background 0.3s ease;
+
+}
+
+.youtube-button:hover {
+
+    background: #922b24;
+
+}
+
+.link-notice {
+
+    font-size: 13px;
+
+    color: #8b6d24 !important;
+
+}
+
+.back-link {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+}
+
+.empty-message {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+/* Halaman Dashboard dan Tentang Kami */
+
+.simple-page {
+
+    max-width: 1050px;
+
+    min-height: 400px;
+
+    margin: auto;
+
+    padding: 60px 24px;
+
+}
+
+.simple-page h1 {
+
+    color: #084333;
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 15px;
+
+}
+
+/* Tampilan tablet */
+
+@media (max-width: 850px) {
+.blog-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+/* Tampilan HP */
+
+@media (max-width: 600px) {
+.blog-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .article-detail h1 {
+
+        font-size: 28px;
+
+    }
+
+    .youtube-section h2,
+
+    .summary-section h2 {
+
+        font-size: 21px;
+
+    }
+
+    .youtube-button {
+
+        display: block;
+
+        text-align: center;
+
+    }
+
+}
+
+/* Thumbnail YouTube pada card dakwah */
+.card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    background: #e7ebe4;
+    cursor: default;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Halaman detail: video responsif */
+.youtube-player {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+    margin: 20px 0;
+}
+
+.youtube-player iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

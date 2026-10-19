@@ -1,0 +1,135 @@
+/* GLOBAL + NAVBAR - styles khusus halaman ini */
+
+/* GLOBAL BASE STYLES */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    color: #244337;
+    background: #faf7f0;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+
+.site-header {
+
+    background: #084333;
+
+    color: #fff;
+
+}
+
+.navbar {
+
+    max-width: 1150px;
+
+    min-height: 75px;
+
+    margin: auto;
+
+    padding: 12px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.brand {
+
+    display: flex;
+
+    flex-direction: column;
+
+    color: #d9ba58;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+
+}
+
+.brand-name {
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+}
+
+.brand small {
+
+    font-size: 12px;
+
+}
+
+.nav-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px 24px;
+
+}
+
+.nav-menu a {
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+}
+
+.nav-menu a:hover,
+
+.nav-menu a.active {
+
+    color: #e1c45f;
+
+}
+
+
+
+/* RESPONSIVE NAVBAR - applies to every page */
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+}

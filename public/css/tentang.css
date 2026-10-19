@@ -1,0 +1,835 @@
+/* TENTANG KAMI - styles khusus halaman ini */
+
+/* ==========================
+
+   HALAMAN TENTANG KAMI
+
+\========================== */
+
+.about-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 75px 24px;
+
+    background:
+
+        radial-gradient(circle at 85% 20%, rgba(218, 188, 83, .13), transparent 27%),
+
+        linear-gradient(135deg, #073d2e, #10563e);
+
+    color: white;
+
+}
+
+.about-hero::after {
+
+    content: "☪";
+
+    position: absolute;
+
+    right: 7%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 200px;
+
+    color: rgba(229, 202, 103, .08);
+
+    pointer-events: none;
+
+}
+
+.about-hero-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.about-label {
+
+    display: inline-block;
+
+    color: #e2c65f;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+
+}
+
+.about-hero h1 {
+
+    max-width: 760px;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(34px, 5vw, 52px);
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+.about-hero-content > p {
+
+    max-width: 650px;
+
+    color: #dce9df;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 27px;
+
+}
+
+.about-hero-button,
+
+.about-volunteer-button {
+
+    display: inline-block;
+
+    padding: 13px 20px;
+
+    border-radius: 8px;
+
+    background: #d7b53c;
+
+    color: #143e30;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: .2s ease;
+
+}
+
+.about-hero-button:hover,
+
+.about-volunteer-button:hover {
+
+    background: #ecd477;
+
+    transform: translateY(-2px);
+
+}
+
+/* INTRO TENTANG WEBSITE */
+
+.about-intro {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 65px 24px;
+
+}
+
+.about-intro-text {
+
+    max-width: 780px;
+
+    margin-bottom: 30px;
+
+}
+
+.about-section-label {
+
+    color: #a3862d;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.7px;
+
+}
+
+.about-intro h2,
+
+.about-heading h2 {
+
+    color: #0b4937;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(27px, 3vw, 35px);
+
+    line-height: 1.3;
+
+    margin: 12px 0 16px;
+
+}
+
+.about-intro-text > p,
+
+.about-heading > p {
+
+    color: #657269;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 14px;
+
+}
+
+.about-values {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+}
+
+.about-value-card {
+
+    padding: 24px;
+
+    background: white;
+
+    border: 1px solid #e8e8df;
+
+    border-radius: 13px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .03);
+
+}
+
+.about-value-card > span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 46px;
+
+    height: 46px;
+
+    background: #eef4e9;
+
+    border-radius: 12px;
+
+    font-size: 24px;
+
+}
+
+.about-value-card h3 {
+
+    margin: 15px 0 8px;
+
+    color: #104333;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+}
+
+.about-value-card p {
+
+    color: #707b72;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+/* GALERI FOTO */
+
+.about-gallery {
+
+    padding: 60px 24px;
+
+    background: #f3f4ec;
+
+}
+
+.about-heading {
+
+    max-width: 740px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+
+}
+
+.about-heading > p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+}
+
+.about-gallery-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+}
+
+.about-gallery-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    background: #0b4937;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 16px rgba(0, 0, 0, .08);
+
+}
+
+.about-gallery-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .4s ease;
+
+}
+
+.about-gallery-card:hover img {
+
+    transform: scale(1.06);
+
+}
+
+.about-gallery-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+
+        to top,
+
+        rgba(3, 29, 21, .9),
+
+        rgba(3, 29, 21, .05) 75%
+
+    );
+
+}
+
+.about-gallery-overlay {
+
+    position: absolute;
+
+    z-index: 1;
+
+    left: 20px;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    color: white;
+
+}
+
+.about-gallery-overlay span {
+
+    color: #e8cf70;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: .6px;
+
+}
+
+.about-gallery-overlay h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    line-height: 1.4;
+
+    margin-top: 8px;
+
+}
+
+.about-gallery-note {
+
+    max-width: 1100px;
+
+    margin: 17px auto 0;
+
+    color: #747d74;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+}
+
+/* AJAKAN RELAWAN */
+
+.about-volunteer {
+
+    padding: 65px 24px;
+
+    background:
+
+        radial-gradient(circle at 90% 10%, rgba(226, 195, 87, .12), transparent 27%),
+
+        linear-gradient(130deg, #083f30, #0e5b41);
+
+    color: white;
+
+}
+
+.about-volunteer-content {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+.about-volunteer h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(30px, 4vw, 40px);
+
+    line-height: 1.3;
+
+    margin: 12px 0 20px;
+
+}
+
+.about-volunteer-content > p {
+
+    max-width: 720px;
+
+    margin: 0 auto 15px;
+
+    color: #dce8df;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+.about-volunteer-benefits {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 25px 0;
+
+}
+
+.about-volunteer-benefits span {
+
+    padding: 9px 13px;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+
+    background: rgba(255, 255, 255, .07);
+
+    border-radius: 25px;
+
+    color: #f3e8b7;
+
+    font-size: 12px;
+
+}
+
+.about-volunteer-button {
+
+    margin-top: 5px;
+
+}
+
+/* KONTAK MASJID */
+
+.about-contact {
+
+    max-width: 1100px;
+
+    padding: 60px 24px;
+
+    margin: auto;
+
+}
+
+.about-contact-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+}
+
+.about-contact-card {
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #e7e8de;
+
+    border-radius: 13px;
+
+}
+
+.about-contact-icon {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 45px;
+
+    height: 45px;
+
+    background: #eef4e9;
+
+    border-radius: 11px;
+
+    font-size: 23px;
+
+}
+
+.about-contact-card h3 {
+
+    color: #104333;
+
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    margin: 15px 0;
+
+}
+
+.about-contact-card p {
+
+    color: #68736a;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin: 8px 0;
+
+    overflow-wrap: anywhere;
+
+}
+
+.about-contact-card strong {
+
+    color: #345442;
+
+}
+
+.about-contact-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+.about-map-button,
+
+.about-schedule-button {
+
+    display: inline-block;
+
+    padding: 12px 17px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+.about-map-button {
+
+    color: white;
+
+    background: #084333;
+
+}
+
+.about-schedule-button {
+
+    color: #244c38;
+
+    background: #e9efdf;
+
+}
+
+.about-contact-note {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #848b83;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+}
+
+/* FOOTER */
+
+.about-footer {
+
+    padding: 35px 24px;
+
+    background: #062e23;
+
+    text-align: center;
+
+    color: #d5e1d8;
+
+}
+
+.about-footer-brand {
+
+    color: #dfc25d;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+.about-footer > p {
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin-top: 10px;
+
+}
+
+.about-footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+.about-footer-links a {
+
+    color: #e4e9e3;
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+}
+
+.about-footer-links a:hover {
+
+    color: #dfc25d;
+
+}
+
+.about-footer .about-copyright {
+
+    padding-top: 20px;
+
+    margin-top: 22px;
+
+    border-top: 1px solid rgba(255,255,255,.12);
+
+    color: #aebfb3;
+
+    font-size: 11px;
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .about-values {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+    .about-gallery-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+    .about-gallery-card {
+
+        height: 290px;
+
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .about-hero {
+
+        padding: 50px 20px;
+
+    }
+
+    .about-hero h1 {
+
+        font-size: 33px;
+
+    }
+
+    .about-intro,
+
+    .about-contact {
+
+        padding: 42px 18px;
+
+    }
+
+    .about-values,
+
+    .about-gallery-grid,
+
+    .about-contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .about-gallery {
+
+        padding: 45px 18px;
+
+    }
+
+    .about-gallery-card {
+
+        height: 280px;
+
+    }
+
+    .about-volunteer {
+
+        padding: 48px 20px;
+
+    }
+
+    .about-volunteer-benefits {
+
+        align-items: center;
+
+        flex-direction: column;
+
+    }
+
+    .about-contact-actions {
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+    }
+
+    .about-map-button,
+
+    .about-schedule-button {
+
+        text-align: center;
+
+    }
+
+}
