@@ -287,37 +287,4 @@
 
 </section>
 
-
-<!-- FOOTER -->
-<footer class="about-footer">
-
-    <a href="{{ route('dashboard') }}" class="about-footer-brand">
-        e-Masjid.id
-    </a>
-
-    <p>
-        Memakmurkan masjid, menghubungkan umat,
-        dan bertumbuh bersama teknologi.
-    </p>
-
-    <div class="about-footer-links">
-
-        <a href="{{ route('dashboard') }}">Dashboard</a>
-
-        <a href="{{ route('jadwal.index') }}">
-            Jadwal Kegiatan
-        </a>
-
-        <a href="{{ route('blog.index') }}">
-            Dakwah Islam
-        </a>
-
-    </div>
-
-    <p class="about-copyright">
-        © {{ date('Y') }} e-Masjid.id
-    </p>
-
-</footer>
-
 @endsection
